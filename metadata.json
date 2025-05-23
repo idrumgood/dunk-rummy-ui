@@ -1,0 +1,6 @@
+{
+  "name": "Gin Rummy Scorer UI",
+  "description": "A web application to record and calculate scores for Gin Rummy games, based on custom rules. Track scores per hand, game completion at a target score, and bonus points for hands won.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

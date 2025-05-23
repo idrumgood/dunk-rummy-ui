@@ -1,0 +1,23 @@
+{
+  "name": "Gin Rummy Scorer",
+  "short_name": "GinScorer",
+  "description": "A web application to record and calculate scores for Gin Rummy games, based on custom rules. Track scores per hand, game completion at a target score, and bonus points for hands won. This is the static frontend and will connect to a Google Cloud API for data storage. The app uses the Gemini API for AI-powered game summaries.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f1f5f9",
+  "theme_color": "#2563eb",
+  "app_details": {
+    "purpose": "To provide a user-friendly interface for scoring Gin Rummy games, managing users, and viewing game history. The application is designed as a static frontend that will eventually integrate with a backend API (hosted on Google Cloud, using Google Cloud object data store) for persistent data storage.",
+    "technologies_used": {
+      "frontend": ["React", "TypeScript", "Tailwind CSS", "Chart.js", "ES Modules"],
+      "ai_capabilities": "Uses Google Gemini API ('gemini-2.5-flash-preview-04-17') to generate insightful end-of-game summaries. Future integration could include game insights or AI opponents.",
+      "data_storage_strategy": "Currently uses browser localStorage for user and game data. Future plan is to connect to a custom API hosted on Google Cloud, which will utilize Google Cloud object storage for user and game data."
+    },
+    "boundaries_and_scope": {
+      "current_scope": "Static frontend application with client-side data persistence (localStorage) and AI-generated game summaries via Gemini API.",
+      "future_scope": "Integration with a backend API for robust data management and potential real-time features.",
+      "api_key_management": "API keys (e.g., for Gemini API) must be obtained exclusively from 'process.env.API_KEY' and are assumed to be pre-configured and accessible in the execution context. The application will not prompt for or manage API keys."
+    },
+    "target_platform": "Web browsers (desktop and mobile responsive)."
+  }
+}
